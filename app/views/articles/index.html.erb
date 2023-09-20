@@ -1,0 +1,12 @@
+<h1>This is our Index Page</h1>
+
+<ul>
+  <% @articles.each do |article| %>
+    <!--
+      <a href="/articles/<%= article.id %>">
+    -->
+    <%= render "article", article: article %>
+    <p><%= link_to "Show", article %></p>
+    <p><%= link_to "New", new_article_path %></p>
+  <% end %>
+</ul>

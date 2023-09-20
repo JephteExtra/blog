@@ -1,0 +1,7 @@
+<%= render "article", article: @article %>
+
+<%= link_to "Home Page", root_path %>
+<h2>New Comment</h2>
+<%= render "comments/form" %>
+<h2>Comments</h2>
+<%= render @article.comments %>
